@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <div id="login-area">
+        <h1 class="text-center">Welcome to Pioneer Online Bank</h1>
+        <div id="submit-area">
+            <h4>Login</h4>
+            <input type="text" name="" class="form-control" id="" placeholder="A/C Number">
+            <br>
+            <input type="password" name="" class="form-control" id=""placeholder="Pin">
+            <br>
+            <button id="login" class="btn btn-danger">Enter</button>
+        </div>
+    </div>
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="deposit status">
+                <h5>Deposit</h5>
+                <h2>৳ <span id="currentamount">00</span></h2>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="withdraw status">
+                <h5>Withdraw</h5>
+                <h2>৳ <span id="currentwithdraw">00</span></h2>
+              </div>
+            </div>
+            <div class="col-md-4">
+               <div class="balance status">
+                <h5>Balance</h5>
+                <h2>৳ <span id="currentbalance">1200</span></h2>
+               </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="submit-area">
+                    <h4>Deposit</h4>
+                    <br>
+                    <input type="number" name="" id="depositamount" class="form-control" placeholder="৳ amount you want to deposit">
+                    <br>
+                    <button id="deposit" class="btn btn-danger">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="submit-area">
+                    <h4>Withdraw</h4>
+                    <br>
+                    <input type="number" name="" id="withdrawamount" class="form-control" placeholder="৳ amount you want to withdraw">
+                    <br>
+                    <button id="withdraw" class="btn btn-danger">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="hello.js"></script>
+</body>
+</html>
